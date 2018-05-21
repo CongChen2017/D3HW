@@ -83,7 +83,7 @@ d3.csv("data/data.csv", function (err, data) {
 	console.log(circlesGroup);
 
 	var text = chartGroup.selectAll(".abbr")
-		.data(globaldata)
+		.data(data)
 		.enter()
 		.append("text")
 		.attr("class", "abbr")

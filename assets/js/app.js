@@ -4,8 +4,8 @@
 // =========
 // Follow your written instructions and create a scatter plot with D3.js.
 
-var svgWidth = 960;
-var svgHeight = 500;
+var svgWidth = 600;
+var svgHeight = 400;
 
 var margin = {
   top: 20,
@@ -95,6 +95,22 @@ d3.csv("data/data.csv", function (err, data) {
 		});
 
 	console.log(text);
+
+	// Create axes labels
+	chartGroup.append("text")
+	    .attr("transform", "rotate(-90)")
+	    .attr("y", 0 - margin.left + 40)
+	    .attr("x", 0 - (height / 2))
+	    .attr("dy", "1em")
+	    .classed("axis-text", true)
+	    .text("COPD Patients %");
+
+	
+
+	chartGroup.append("text")
+	    .attr("transform", `translate(${width/2}, ${height + margin.top + 30})`)
+	    .attr("class", "axisText")
+	    .text("In Poverty %");
 
 
 });

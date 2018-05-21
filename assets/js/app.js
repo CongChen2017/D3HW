@@ -40,9 +40,9 @@ d3.csv("data/data.csv", function (err, data) {
 	globaldata = data;
 
 	// parse data
-  	data.forEach(function (data) {
-	    data.poverty = +data.poverty;
-	    data.copd = +data.copd;
+  	data.forEach(function (d) {
+	    d.poverty = +d.poverty;
+	    d.copd = +d.copd;
 	});
 
   	var xLinearScale = d3.scaleLinear()
@@ -82,10 +82,11 @@ d3.csv("data/data.csv", function (err, data) {
 
 	console.log(circlesGroup);
 
-	var text = chartGroup.selectAll("text")
-		.data(data)
+	var text = chartGroup.selectAll(".abbr")
+		.data(globaldata)
 		.enter()
 		.append("text")
+		.attr("class", "abbr")
 		.attr("x", d => xLinearScale(d.poverty-0.53))
 	    .attr("y", d => yLinearScale(d.copd))
 	    .attr("dx", 12)

@@ -1,3 +1,8 @@
+## This repo is my D3 home work, which I finished level 2 (check instructions below)
+Here is the published GitHub page of this project:
+https://congchen2017.github.io/D3HW/
+
+
 # Unit 16 | Assignment - Data Journalism and D3
 
 <a target='_blank' href="https://giphy.com/gifs/newspaper-press-v2xIous7mnEYg"><img alt='Newspaper Printing (via GIPHY)' src="http://i.giphy.com/v2xIous7mnEYg.gif" /> <br><em>via GIPHY</em></a>

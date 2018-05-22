@@ -1,7 +1,8 @@
-## This repo is my D3 home work, which I finished level 2 (check instructions below)
+### This repo is my D3 home work, which I finished level 2 (check instructions below)
 Here is the published GitHub page of this project:
 https://congchen2017.github.io/D3HW/
-
+<br>
+<br>
 
 # Unit 16 | Assignment - Data Journalism and D3
 
@@ -133,4 +134,3 @@ Your final product will be assessed on the following metrics:
 
 ## Copyright
 
-Coding Boot Camp (C) 2016. All Rights Reserved.
